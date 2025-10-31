@@ -1,0 +1,65 @@
+/********* bu yazıları yatay olarak ortalamaya yarıyor *********/
+body {
+    text-align: center;
+}
+/** arama kutusunun genişlik ve büyüklüğünü ayarlayarak search kutusunun koyulaştırdım **/
+.container-search {
+    width: 317px;
+    height: 21px;
+    border: 1px solid black;
+}
+/*** widht kısmını % yaptım sayfanın yüzde 90 nını kaplayacak çünkü burda px değeri vermiştim hata 1 ***/
+.container {
+    width: 90%;
+    height: 80px;
+    margin: auto;
+}   
+/* margin oto yaptım her ekran da ve bilgisayrda kendini otomatik olarak ortalayacak */
+/**  display: flex;->Öğeleri yan yana (tek satırda) veya alt alta dizebilirsin */
+/** justify-content: space-between;->İlk öğe sola, son öğe sağa; aralar eşit boşluk. **/
+/** flex-direction: row;->Öğeler soldan sağa doğru sıralanır (varsayılan yön). */
+.container-two {
+    width: 90%;
+    height: 90px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+/**  margin-right: 3px;->bir elementin dış kenarı ile çevresindeki diğer elementler arasındaki boşluktur. */
+#first-box {
+    width: 35%;
+    height: 80px;
+    margin-right: 3px;
+}
+
+#second-box {
+    width: 30%;
+    height: 80px;
+    margin-right: 3px;
+}
+/*** burda margini vermedim kendisi otamatik olarak doldurdu zaten ***/
+/** ve 1. ile 3. kutu büyük olarak verdim ki eşitsizlik olmasın ve tam olsun  **/
+#third-box {
+    width: 35%;
+    height: 80px;
+}
+
+
+/********************** RENKLER ******************/
+
+.bg-lightgray {
+    background-color: lightgray;
+}
+
+.bg-aqua {
+    background-color: #7ee5da;
+}
+
+.bg-aqua-two {
+    background-color: #70ccc2;
+}
+
+.bg-aqua-three {
+    background-color: #62b3aa;
+}
